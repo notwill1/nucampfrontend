@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Lucas Hempen</title>
+    <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+    <h1>Profile - Lucas Hempen</h1>
+    <div id="grid-container">   
+       <div id="item1"> <img src="images/lucas-square.jpg" alt="Profile picture" height= "350"/>
+    </div>
+    <div id="item2">
+    <section>    
+        <h2>About Me</h2>
+        <ul>
+            <li>I was born and raised in <a href="https://en.wikipedia.org/wiki/Uxbridge,_Ontario" target="_blank">Uxbridge</a> Ontario Canada.</li>
+            <li>Currently living in <a href="https://en.wikipedia.org/wiki/Guelph" target="_blank">Guelph</a> Ontario Canada.</li>
+            <li>Currently working as a territory sales reps for an optical frame company.</li>
+            <li>Taking courses at <a href="https://www.nucamp.co/" target="_blank">NuCamp</a> to be able to take on more roles within company.</li>
+            <li>Hoping to one day be a <strong>Full Stack Developer.</strong></li>
+        </ul>
+    </div>
+    </section>
+    <div id="item4">
+        <section>
+        <h2>Interests</h2>
+        <ul>
+            <li><strong>New found interest in coding!</strong></li>
+            <li>Indoor/outdoor soccer</li>
+            <li>Juggling <em>(I used to competed when I was younger)</em></li>
+            <li>Hanging out with/chasing around my dog Penny (small but fast, click the image to see just how fast Dachshunds can be!)</li>
+        </ul>
+        </section>  
+    </div>
+        <div id="item5">
+        <a href="https://www.youtube.com/watch?v=wu1ir4YhXiw" target="_blank"><img src ="images/miniature-dachshund.jpg" alt= "cute picture of my dog." height="300" /></a> 
+    </div>
+    
+    <div id="item3">
+    <section>
+        <h2>Music I like</h2>
+        
+        <p>I like most music (except country). Click <a href="https://open.spotify.com/playlist/6ofwSZK9j1pi233ZDnq3Qv" target="_blank">HERE</a> to check out a playlist I like on Spotify.</p>
+        <p>Of the MP3s available from the NuCamp source I like this one the best.</p>
+        <audio src="mp3s/Vivaldi_Sonata_eminor_.mp3" controls loop>Your browser does not support HTML5 audio. Here is <a href="mp3s/Vivaldi_Sonata_eminor_.mp3">a link to the audio</a> instead.</audio>
+    </section>
+    </div>
+    </div> <!--end of grid-->
+    <h1>Tell Me About You!</h1>
+    <form class="survey-form" action="mailto:lucashempen@gmail.com" method="post">
+        <fieldset>
+            <legend><strong>Your Information</strong></legend>
+            <div>
+               <label for="firstName"> First Name:</label> 
+               <input id="firstName" type="text" name="firstName" placeholder="Your First Name" />
+            </div>
+            <div>
+                <label for="lastName"> Last Name:</label>
+                <input id="lastName" type="text" name="lastName" placeholder="Your Last Name" />
+            </div>
+            <div>
+               <label for="yourEmail"> Your Email:</label>
+               <input id="yourEmail" type="email" name="email" placeholder="Your Email Address" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><strong>Say Hello!</strong></legend>
+            <div>
+                <textarea name="intro" rows="10" cols="90" placeholder="Where are you from? What are your goals?" ></textarea>
+            </div>
+            <div>
+                Do you have any pets?
+                <input id="cat" type="checkbox" name="pets" value="cat" /> <label for="cat">Cats</label>
+                <input id="dog" type="checkbox" name="pets"  value="dog" /> <label for="dog">Dogs</label>
+                <input id="other" type="checkbox" name="pets" value="other" /> <label for="other">Other</label>
+            </div>
+        </fieldset>
+        <input type="submit" id="submit-btn" value="Send Your Introduction!" />
+    </form>
+</body>
+</html>
