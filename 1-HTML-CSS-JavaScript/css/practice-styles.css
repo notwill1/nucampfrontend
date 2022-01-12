@@ -27,4 +27,5 @@ label {
 section {
     border-width: 5px;
     border-color: black;
+    border-style: ridge;
 }
