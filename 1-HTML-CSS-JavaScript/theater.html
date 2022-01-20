@@ -6,9 +6,19 @@
     </head>
     <body>
         <h1>Magical Mystery Theater</h1>
-        <button type="button">Purchase Ticket</button>
+        <button type="button" onclick="buyTicket()">Purchase Ticket</button>
         <script>
-            
+            const GENERAL_ADMISSION_TICKET_COST = 20;
+            const CHILD_AND_SENIOR_TICKET_COST = 10;
+
+            function buyTicket() {
+                const age = prompt('what is your age?')
+                let cost = GENERAL_ADMISSION_TICKET_COST;
+                if ((age <= 12) ||(age >= 65)) {
+                    cost = CHILD_AND_SENIOR_TICKET_COST;
+                }    
+                alert ('Your ticket will cost: $' + cost);
+            }
         </script>
     </body>
 </html>
